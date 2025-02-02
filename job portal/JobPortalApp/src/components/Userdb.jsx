@@ -2,7 +2,6 @@ import { AppBar, Avatar, Box, Button, IconButton, Toolbar, Typography, useMediaQ
 import MenuIcon from "@mui/icons-material/Menu"; // Import Menu Icon
 import React, { useState } from "react";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
-import './Userdbs.css'
 import Userprofile from "./Userprofile";
 import AppliedJobs from "./AppliedJobs";
 import BrowseJob from "./BrowseJob";

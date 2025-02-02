@@ -1,4 +1,4 @@
-import { Button, FormControl, FormControlLabel, Radio, RadioGroup, TextField, Typography } from '@mui/material'
+import { Button, TextField, Typography } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -30,17 +30,7 @@ function Register() {
 
 <TextField id="standard-basic" label="Password" variant="outlined" required/>
 <br /> 
-<FormControl>
-      <RadioGroup
-        row
-        aria-labelledby="demo-row-radio-buttons-group-label"
-        name="row-radio-buttons-group"
-      >
-        <FormControlLabel value="female" control={<Radio />} label="Female" />
-        <FormControlLabel value="male" control={<Radio />} label="Male" />
-       
-      </RadioGroup>
-    </FormControl>
+
     <br /> <br />
     <Link to='/userdb'>
     <Button variant="contained" type='submit' >submit</Button>

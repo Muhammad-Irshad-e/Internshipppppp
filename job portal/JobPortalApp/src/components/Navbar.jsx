@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div className='m-0 p-0'>
-       <nav className="bg-blue-600 text-white py-3 px-6 flex justify-between items-center">
+       <nav className="bg-blue-600 text-white py-3 px-6 flex justify-between items-center" style={{backgroundColor:'#1976d2'}}>
         <div className="text-lg font-bold">JOBIFY</div>
         <div className="space-x-4">
         <Link to='/'>

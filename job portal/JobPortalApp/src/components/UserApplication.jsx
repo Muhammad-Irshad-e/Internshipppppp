@@ -25,7 +25,6 @@ const rows = [
       jobId: '102',
       jobTitle: 'Product Manager',
     },
-    // Add more application objects as needed
   ];
 
 const UserApplication = () => {

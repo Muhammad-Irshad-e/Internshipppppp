@@ -8,12 +8,7 @@ const Userprofile = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const user = {
-    fullname: "John Doe",
-    email: "johndoe@example.com",
-    mobile: "123-456-7890",
-    password: "password123",
-  };
+
 
   return (
     <div className="flex justify-center items-center p-0">
