@@ -5,6 +5,7 @@ import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import Userprofile from "./Userprofile";
 import AppliedJobs from "./AppliedJobs";
 import BrowseJob from "./BrowseJob";
+import { UserButton } from "@clerk/clerk-react";
 
 const Userdb = () => {
   const navigate = useNavigate()
@@ -71,7 +72,7 @@ const Userdb = () => {
 
           {/* Navigation Buttons (Hidden on Small Screens) */}
           {!isSmallScreen && (
-            <Box className="menu" sx={{ display: "flex", gap: 2 }}>
+            <Box className="menu" sx={{ display: "flex", gap: 2 ,marginRight:4}}>
               <Button sx={{ color: "#fff" }} onClick={gotoBrowseJob}>Browse Jobs</Button>
               <Button sx={{ color: "#fff" }} onClick={gotoAppliedJobs}>View Applied Jobs</Button>
 
@@ -79,15 +80,12 @@ const Userdb = () => {
             </Box>
           )}
 
-          <Button sx={{ color: "#fff",marginLeft:5 }}>Logout</Button>
           
-          <Button onClick={gotoUserProfile}>
-          <Avatar className="profile-pic" src="/profile-user.png" sx={{ ml: 2 }} />
-          </Button>
+          <UserButton/>
             
           
         </Toolbar>
-      </AppBar>
+      </AppBar><br /><br /><br /><br />
       <div>
         <Routes>
           <Route path="appliedjobs" element={<AppliedJobs />} />
